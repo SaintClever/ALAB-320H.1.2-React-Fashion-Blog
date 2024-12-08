@@ -1,13 +1,17 @@
+import { data } from "./Data.jsx";
+
 let Story = () => {
-  return (
-    <div>
-    11/12/20
-    <h2>One The Street in Brooklyn</h2>
-    <img src="./assets/image1.jpg" />
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa necessitatibus fugit quos quia! Quis, perspiciatis repellendus. Quam dolorem quibusdam assumenda officiis, exercitationem, voluptatibus sit, quas ad praesentium natus voluptatem cumque?</p>
+
+  const story = data.map(article => 
+    <div key={article.id}>
+    <p>{article.date}</p>
+    <h2>{article.title}</h2>
+    <img src={article.image} />
+    <p>{article.summary}</p>
     <p style={{ textAlign: "right", color: "red"}}>continue...</p>
     </div>
   )
+  return (story)
 }
 
 export { Story }

@@ -11,6 +11,8 @@ let Footer = () => {
         <li><a href="#">About</a></li>
       </ul>
     </nav>
+    <hr />
+    <p>&copy; 2025 Valet Industries, Inc</p>
     </footer>
   )
 }

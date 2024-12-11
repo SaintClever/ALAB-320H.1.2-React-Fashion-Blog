@@ -1,7 +1,7 @@
-import './App.css'
 import { Header } from "./Header.jsx";
-import { Navbar } from "./Navbar.jsx";
-import { Story } from "./Story.jsx";
+import { Nav } from "./Nav.jsx";
+import { Article } from "./Article.jsx";
+import { Footer } from "./Footer.jsx";
 
 function App() {
 
@@ -10,8 +10,9 @@ function App() {
     <>
       <div>
         <Header />
-        <Navbar />
-        <Story />
+        <Nav />
+        <Article />
+        <Footer />
       </div>
     </>
   )
